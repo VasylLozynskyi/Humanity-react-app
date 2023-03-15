@@ -1,0 +1,18 @@
+@use "css/constants" as color;
+header{
+  .background-block{
+    background-color: color.$blue;
+    padding: 0 8px;
+    .contacts{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .menu{
+    margin: 30px auto;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

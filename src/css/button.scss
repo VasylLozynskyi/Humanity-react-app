@@ -1,0 +1,19 @@
+@import "./constants.scss";
+$small: 31px;
+$medium: 37px;
+$bold: 55px;
+
+@mixin button($padd, $bgd, $text) {
+  padding: 22px $padd;
+  list-style: none;
+  background-color: $bgd;
+  border-radius: 34px;
+  color: $text;
+  transition: 1s;
+  @if $bgd == none {
+    border: 2px solid $black;
+  }
+  &:hover{
+    background-color: rgba($bgd, 0.8);
+  }
+}
