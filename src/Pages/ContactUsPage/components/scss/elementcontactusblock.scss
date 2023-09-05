@@ -1,0 +1,47 @@
+@use "css/constants" as color;
+
+.flex-element-contacts {
+  display: flex;
+  transition: 1s;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  gap: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    z-index: -1;
+    background-color: color.$backgray;
+    transform: translateX(-92%);
+  }
+  &:hover::before {
+    transform: translateX(0);
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+  ._block-icon {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: color.$backgray;
+  }
+  ._text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      margin: 0;
+    }
+  }
+}

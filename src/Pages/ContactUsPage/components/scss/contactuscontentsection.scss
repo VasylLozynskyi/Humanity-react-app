@@ -1,0 +1,17 @@
+@use "css/constants" as color;
+
+.contactuscontent {
+  .subtitle {
+    color: color.$red;
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  p {
+    margin: 20px 0 40px 0;
+  }
+  .contact-btns-flex-block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}

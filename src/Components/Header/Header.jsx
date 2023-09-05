@@ -1,20 +1,23 @@
 import { AddressLinks } from "./components/AddressLinks"
-import { HeaderLogo } from "./components/HeaderLogo"
+import { Logo } from "../components/Logo/Logo"
 import { NavBar } from "./components/NavBar"
-import { SocialLinks } from "./components/SocialsLinks"
+import { SocialLinks } from "../components/SocialLinksSection/SocialsLinks"
+import { companySocialIcons } from "data/companyInfo"
 import "./header.scss"
 
 export const Header = () => {
   return (
-    <header>
+    <header id="header">
       <div className="background-block">
         <div className="container contacts">
           <AddressLinks />
-          <SocialLinks />
+          <div className="_social-links-content">
+            <SocialLinks data={companySocialIcons} />
+          </div>
         </div>
       </div>
       <nav className="container menu">
-        <HeaderLogo />
+        <Logo />
         <NavBar />
       </nav>
     </header> 

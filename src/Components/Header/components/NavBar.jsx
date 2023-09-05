@@ -20,7 +20,7 @@ export const NavBar = () => {
                 onMouseEnter={() => setshowdropdown(true)}
                 onMouseLeave={() => setshowdropdown(false)}
               >
-                <Link className="transf" to={el.link}>
+                <Link className="transf" to={"#"}>
                   {el.name}
                 </Link>
                 {showdropdown && <Dropdown />}

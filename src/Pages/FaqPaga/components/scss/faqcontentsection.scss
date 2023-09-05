@@ -1,0 +1,28 @@
+@use "css/constants" as color;
+@import "css/button";
+.flex-block{
+  .mail-Question{
+    max-width: 545px;
+    height: 100%;
+    padding: 70px 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h4{
+      margin: 25px 0;
+    }
+    a{
+      button{
+        @include button($small, color.$black, color.$white)
+      }
+    }
+  }
+  .faq-answers{
+    width: 100%;
+    &>div{
+      margin-bottom: 100px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

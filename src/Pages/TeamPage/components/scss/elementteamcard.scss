@@ -1,0 +1,17 @@
+.elementteamcard{
+  width: 380px;
+  height: 590px;
+  text-align: center;
+  ._imageelement{
+    width: 100%;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+  ._sociallinks-card{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+}

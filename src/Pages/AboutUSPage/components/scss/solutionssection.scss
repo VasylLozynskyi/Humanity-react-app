@@ -1,0 +1,45 @@
+@use "css/constants" as color;
+@import "css/button";
+
+.solutionssection{
+  position: relative;
+  ._image{
+    max-width: 560px;
+    max-height: 500px;
+  }
+  ._quotes{
+    max-width: 450px;
+    background-color: color.$black;
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    h4{
+      color: color.$white;
+    }
+  }
+  ._content{
+    h2{
+      color: color.$red;
+      font-weight: 400;
+      font-size: 35px;
+    }
+    p{
+      margin: 20px 0;
+    }
+    ._block{
+      background-color: color.$blue;
+      padding: 20px;
+      p{
+        margin: 0;
+      }
+    }
+    button{
+      margin-top: 40px;
+      @include button($small, color.$black, color.$white)
+    }
+  }
+}

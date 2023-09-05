@@ -1,0 +1,16 @@
+@use "css/constants" as color;
+.elementpoint-volunteer{
+  ._number{
+    background-color: color.$red;
+    border-radius: 50%;
+    padding: 15px;
+    h4{
+      color: color.$white;
+    }
+  }
+  ._content{
+    p{
+      margin: 10px 0;
+    }
+  }
+}

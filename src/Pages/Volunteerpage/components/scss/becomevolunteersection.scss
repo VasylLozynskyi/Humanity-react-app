@@ -1,0 +1,42 @@
+@use "css/constants" as color;
+@import "css/button";
+
+.becomevolunteersection{
+  .subtitle{
+    color: color.$red;
+    font-weight: 400;
+    font-size: 35px;
+  }
+  .flex-block{
+    div:first-child{
+      ._points{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px 0;
+      }
+      button{
+        @include button($medium, none, color.$black);
+        margin-top: 20px;
+      }
+    }
+    .form-volunteersection{
+      width: 100%;
+      border: 1px solid #F1EEEC;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      animation: fadeIn 2s;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

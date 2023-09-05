@@ -1,0 +1,58 @@
+@use "css/constants" as color;
+
+.aboutusintro {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -200px;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    padding: 60px 30px;
+    p {
+      margin: 15px 0;
+    }
+    button {
+      padding: 0;
+      text-decoration-line: underline;
+      background-color: color.$black;
+      color: color.$white;
+      transition: 2s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    &:first-child {
+      background-color: color.$blue;
+    }
+    &:nth-child(2) {
+      background-color: color.$black;
+      h2,
+      p {
+        color: color.$white;
+      }
+    }
+    &:last-child {
+      padding: 0;
+      video {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    @media (max-width: 1160px){
+      width: 400px;
+    }
+    @media (max-width: 500px){
+      width: 290px;
+    }
+  }
+  @media (max-width: 1160px){
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: 500px){
+    top: -100px;
+  }
+}

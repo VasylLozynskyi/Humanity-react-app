@@ -1,0 +1,24 @@
+@use "css/constants" as color;
+@import "css/button";
+
+.volunteerinfosection{
+  .subtitle{
+    color: color.$red;
+    font-weight: 400;
+    font-size: 35px;
+  }
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    &>.flex-block{
+      display: flex;
+      align-items: center;
+      button{
+        margin-top: 30px;
+        @include button($bold, color.$black, color.$white)
+      }
+    }
+    
+  }
+}

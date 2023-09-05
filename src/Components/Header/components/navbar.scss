@@ -53,7 +53,7 @@
       }      
     }
   }
-}
-button{
-  @include button($small, color.$red, color.$white)
+  button{
+    @include button($small, color.$red, color.$white)
+  }
 }

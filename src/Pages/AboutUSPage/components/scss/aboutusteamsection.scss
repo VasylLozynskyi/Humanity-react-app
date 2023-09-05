@@ -1,0 +1,54 @@
+@use "css/constants" as color;
+@import "css/button";
+
+.aboutusteamsection{
+  background-color: color.$backgray;
+  text-align: center;
+  h2{
+    color: color.$red;
+  }
+  ._volunteers-cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 460px;
+    ._cards-qarousel{
+      width: 75%;
+      height: 100%;
+      &>.slider_container{
+        height: 100%;
+        margin: 0;
+        ._item{
+          width: 280px;
+          ._imageelement{
+            width: 100%;
+            img{
+              width: 100%;
+            }
+          }
+          ._sociallinks-card{
+            display: inline-flex;
+          }
+        }
+      }
+    }
+    ._become-block{
+      width: 280px;
+      background-color: aqua;
+      padding: 60px 20px;
+      ._hand-icon{
+        display: inline-flex;
+        background-color: color.$text;
+        border-radius: 50%;
+        padding: 15px;
+      }
+      &>h2{
+        color: color.$black;
+      }
+      button{
+        margin-top: 15px;
+        @include button($medium, color.$black, color.$white);
+      }
+    }
+  }
+}

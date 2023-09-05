@@ -1,0 +1,38 @@
+@use "css/constants" as color;
+.GoalMissionSection{
+  ._goalsection{
+    &>p{
+      margin: 20px 0;
+    }
+   ._tags-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 35px 0;
+    ._tagelement{
+      padding: 10px 15px;
+      background-color: color.$backgray;
+      border-radius: 45px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+   }
+  }
+  ._missionsection{
+    position: relative;
+    ._mission-block{
+      position: absolute;
+      display: inline-flex;
+      flex-direction: column;
+      padding: 15px 35px;
+      left: 35px;
+      bottom: -55px;
+      background-color: color.$blue;
+      text-align: center;
+      h1{
+        color: color.$black;
+      }
+    }
+  }
+}
